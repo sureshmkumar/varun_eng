@@ -1,0 +1,240 @@
+
+/*==================================
+CONTACT PAGE
+==================================*/
+
+
+.contact-hero{
+
+  height:70vh;
+
+  position:relative;
+
+  overflow:hidden;
+
+}
+
+
+.contact-hero img{
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+}
+
+
+
+
+.contact-section{
+
+  padding:100px 0;
+
+}
+
+
+
+.contact-wrapper{
+
+
+  display:grid;
+
+
+  grid-template-columns:
+1fr 1fr;
+
+
+  gap:40px;
+
+}
+
+
+
+
+.contact-card{
+
+
+  padding:40px;
+
+
+  background:white;
+
+
+  border-radius:20px;
+
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+
+.contact-card input,
+
+
+.contact-card textarea{
+
+
+  width:100%;
+
+
+  padding:15px;
+
+
+  margin-bottom:20px;
+
+
+  border:1px solid #ddd;
+
+
+  border-radius:10px;
+
+}
+
+
+
+.contact-card button{
+
+
+  padding:15px 30px;
+
+
+  background:#10B981;
+
+
+  border:none;
+
+
+  border-radius:30px;
+
+
+  color:white;
+
+
+  cursor:pointer;
+
+}
+
+
+
+.map-section iframe{
+
+
+  width:100%;
+
+
+  height:500px;
+
+
+  border:none;
+
+}
+
+
+
+.faq{
+
+
+  padding:100px 0;
+
+}
+
+
+
+.faq-item{
+
+
+  margin-bottom:20px;
+
+
+  border-radius:10px;
+
+
+  overflow:hidden;
+
+
+  background:white;
+
+}
+
+
+
+.faq-item button{
+
+
+  width:100%;
+
+
+  padding:20px;
+
+
+  border:none;
+
+
+  background:#0F172A;
+
+
+  color:white;
+
+
+  cursor:pointer;
+
+
+  text-align:left;
+
+}
+
+
+
+.faq-item div{
+
+
+  padding:20px;
+
+
+  display:none;
+
+}
+
+
+
+.career{
+
+
+  padding:100px 0;
+
+
+  text-align:center;
+
+
+  background:#F8FAFC;
+
+}
+
+
+
+@media(max-width:768px){
+
+  .contact-wrapper{
+
+    grid-template-columns:1fr;
+
+  }
+
+
+  .contact-hero{
+
+    height:50vh;
+
+  }
+
+
+  .map-section iframe{
+
+    height:350px;
+
+  }
+
+}
