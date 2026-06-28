@@ -1,240 +1,586 @@
+/* ==========================================
+   CONTACT PAGE
+========================================== */
 
-/*==================================
-CONTACT PAGE
-==================================*/
+:root{
+    --primary:#0b63c9;
+    --secondary:#ff9800;
+    --dark:#222;
+    --light:#fff;
+    --gray:#666;
+    --bg:#f5f7fa;
+}
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fff;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ==========================================
+ HERO
+========================================== */
 
 .contact-hero{
 
-  height:70vh;
+    position:relative;
+    height:350px;
 
-  position:relative;
+    background:url("../img/contact-banner.jpg")
+    center center/cover no-repeat;
 
-  overflow:hidden;
-
-}
-
-
-.contact-hero img{
-
-  width:100%;
-  height:100%;
-
-  object-fit:cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
 }
 
+.contact-hero .overlay{
 
+    position:absolute;
+    inset:0;
 
+    background:rgba(0,0,0,.55);
+
+}
+
+.hero-content{
+
+    position:relative;
+    z-index:5;
+
+    color:#fff;
+    text-align:center;
+
+}
+
+.hero-content h1{
+
+    font-size:58px;
+    font-weight:700;
+
+}
+
+.hero-content p{
+
+    margin-top:15px;
+    font-size:20px;
+
+}
+
+/* ==========================================
+ CONTACT SECTION
+========================================== */
 
 .contact-section{
 
-  padding:100px 0;
+    padding:80px 0;
+    background:#fff;
 
 }
 
+.contact-grid{
 
-
-.contact-wrapper{
-
-
-  display:grid;
-
-
-  grid-template-columns:
-1fr 1fr;
-
-
-  gap:40px;
+    display:grid;
+    grid-template-columns:1fr 430px;
+    gap:60px;
+    align-items:flex-start;
 
 }
 
+.contact-left h2{
 
+    font-size:34px;
+    margin-bottom:20px;
 
+}
+
+.contact-left p{
+
+    color:#666;
+    line-height:1.9;
+    margin-bottom:30px;
+
+}
+
+.contact-info{
+
+    margin-bottom:35px;
+
+}
+
+.contact-info div{
+
+    display:flex;
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:18px;
+
+    font-size:18px;
+
+}
+
+.contact-info i{
+
+    color:var(--primary);
+    width:25px;
+
+}
+
+/* ==========================================
+ GOOGLE MAP
+========================================== */
+
+.map-box{
+
+    overflow:hidden;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.map-box iframe{
+
+    width:100%;
+    height:420px;
+    border:none;
+
+}
+
+/* ==========================================
+ FORM
+========================================== */
 
 .contact-card{
 
+    background:#fff;
 
-  padding:40px;
+    padding:40px;
 
+    border-radius:18px;
 
-  background:white;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
 
-
-  border-radius:20px;
-
-
-  box-shadow:
-    0 10px 30px rgba(0,0,0,.08);
+    position:sticky;
+    top:110px;
 
 }
 
+.contact-card h2{
 
+    text-align:center;
 
-.contact-card input,
+    margin-bottom:10px;
 
-
-.contact-card textarea{
-
-
-  width:100%;
-
-
-  padding:15px;
-
-
-  margin-bottom:20px;
-
-
-  border:1px solid #ddd;
-
-
-  border-radius:10px;
+    font-size:34px;
 
 }
 
+.contact-card p{
 
+    text-align:center;
 
-.contact-card button{
+    color:#666;
 
-
-  padding:15px 30px;
-
-
-  background:#10B981;
-
-
-  border:none;
-
-
-  border-radius:30px;
-
-
-  color:white;
-
-
-  cursor:pointer;
+    margin-bottom:30px;
 
 }
 
+.input-group{
 
-
-.map-section iframe{
-
-
-  width:100%;
-
-
-  height:500px;
-
-
-  border:none;
+    margin-bottom:20px;
 
 }
 
+.input-group input,
+.input-group textarea,
+.input-group select{
 
+    width:100%;
 
-.faq{
+    padding:16px;
 
+    border:1px solid #ddd;
 
-  padding:100px 0;
+    border-radius:10px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+    outline:none;
 
 }
 
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus{
 
+    border-color:var(--primary);
+
+    box-shadow:0 0 8px rgba(0,99,201,.2);
+
+}
+
+textarea{
+
+    resize:none;
+
+}
+
+.btn-submit{
+
+    width:100%;
+
+    border:none;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    padding:16px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-submit:hover{
+
+    background:#004da8;
+
+    transform:translateY(-2px);
+
+}
+
+#msg{
+
+    text-align:center;
+
+    margin-top:20px;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+ CAREERS
+========================================== */
+
+.career-section{
+
+    padding:80px 0;
+
+    background:#f8f9fc;
+
+    text-align:center;
+
+}
+
+.career-section h2{
+
+    font-size:40px;
+
+    margin-bottom:15px;
+
+}
+
+.career-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+.career-card{
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:35px;
+
+    transition:.3s;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.career-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.career-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+}
+
+/* ==========================================
+ FAQ
+========================================== */
+
+.faq-section{
+
+    padding:80px 0;
+
+}
+
+.faq-section h2{
+
+    text-align:center;
+
+    font-size:40px;
+
+    margin-bottom:40px;
+
+}
 
 .faq-item{
 
+    margin-bottom:20px;
 
-  margin-bottom:20px;
+    border-radius:10px;
 
+    overflow:hidden;
 
-  border-radius:10px;
-
-
-  overflow:hidden;
-
-
-  background:white;
+    border:1px solid #eee;
 
 }
 
+.faq-btn{
 
+    width:100%;
 
-.faq-item button{
+    padding:20px;
 
+    text-align:left;
 
-  width:100%;
+    border:none;
 
+    background:#fff;
 
-  padding:20px;
+    cursor:pointer;
 
+    font-size:18px;
 
-  border:none;
+    font-weight:600;
 
-
-  background:#0F172A;
-
-
-  color:white;
-
-
-  cursor:pointer;
-
-
-  text-align:left;
+    transition:.3s;
 
 }
 
+.faq-btn:hover{
 
-
-.faq-item div{
-
-
-  padding:20px;
-
-
-  display:none;
+    background:#f7f7f7;
 
 }
 
+.faq-content{
 
+    display:none;
 
-.career{
+    padding:20px;
 
+    background:#fafafa;
 
-  padding:100px 0;
-
-
-  text-align:center;
-
-
-  background:#F8FAFC;
+    color:#666;
 
 }
 
+/* ==========================================
+ FLOATING BUTTONS
+========================================== */
 
+.wa-btn,
+.call-btn{
+
+    position:fixed;
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    font-size:28px;
+
+    text-decoration:none;
+
+    right:20px;
+
+    z-index:999;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.wa-btn{
+
+    bottom:95px;
+
+    background:#25D366;
+
+}
+
+.call-btn{
+
+    bottom:20px;
+
+    background:#0b63c9;
+
+}
+
+/* ==========================================
+ FOOTER
+========================================== */
+
+.footer{
+
+    background:#111;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:25px 0;
+
+}
+
+/* ==========================================
+ RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.contact-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.contact-card{
+
+position:relative;
+
+top:0;
+
+}
+
+.hero-content h1{
+
+font-size:46px;
+
+}
+
+}
 
 @media(max-width:768px){
 
-  .contact-wrapper{
+.contact-section{
 
-    grid-template-columns:1fr;
+padding:60px 20px;
 
-  }
+}
 
+.hero-content h1{
 
-  .contact-hero{
+font-size:38px;
 
-    height:50vh;
+}
 
-  }
+.hero-content p{
 
+font-size:17px;
 
-  .map-section iframe{
+}
 
-    height:350px;
+.contact-left h2,
+.contact-card h2,
+.career-section h2,
+.faq-section h2{
 
-  }
+font-size:30px;
+
+}
+
+.map-box iframe{
+
+height:300px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.contact-card{
+
+padding:25px;
+
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select{
+
+padding:14px;
+
+}
+
+.btn-submit{
+
+padding:15px;
+
+font-size:16px;
+
+}
+
+.hero-content h1{
+
+font-size:32px;
+
+}
+
+.hero-content p{
+
+font-size:15px;
+
+}
 
 }

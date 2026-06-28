@@ -1,32 +1,52 @@
+const scriptURL = "https://script.google.com/macros/s/AKfycbzWHqwCnwqQT00EN6msQ_ThoijTnOzh7vWPwypP3pdwzzD9Wm__olivbPrIf66Ezm3_/exec";
 
-const faq=document.querySelectorAll('.faq-item');
+document.addEventListener("DOMContentLoaded", () => {
 
+    const form = document.getElementById("leadForm");
+    const msg = document.getElementById("msg");
 
-faq.forEach(item=>{
+    if (!form) {
+        console.error("leadForm not found");
+        return;
+    }
 
+    form.addEventListener("submit", async function (e) {
 
-  const btn=item.querySelector('button');
+        e.preventDefault();
 
-  const body=item.querySelector('div');
+        const formData = new FormData(form);
 
+        try {
 
-  btn.onclick=()=>{
+            const response = await fetch(scriptURL, {
+                method: "POST",
+                body: formData,
+                redirect: "follow"
+            });
 
+            const text = await response.text();
 
-    body.style.display=
+            console.log(text);
 
-      body.style.display==='block'
+            if (msg) {
+                msg.innerHTML =
+                    "<span style='color:green'>Submitted Successfully.</span>";
+            }
 
-        ?
+            form.reset();
 
-        'none'
+        }
+        catch (err) {
 
-        :
+            console.error(err);
 
-        'block';
+            if (msg) {
+                msg.innerHTML =
+                    "<span style='color:red'>Submission Failed.</span>";
+            }
 
+        }
 
-  };
-
+    });
 
 });

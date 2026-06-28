@@ -3,431 +3,468 @@
 
 <head>
 
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-  <meta name="viewport"
-        content="width=device-width,initial-scale=1">
+					   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>
+		 
 
-    Contact Us
+    <title>Contact Us | Varun Engineering</title>
 
-  </title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-  <link rel="stylesheet"
-        href="css/style.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+							 
 
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Contact CSS -->
+    <link rel="stylesheet" href="css/contact.css">
+																						 
 
 </head>
 
 
 <body>
 
+<!-- ================= HEADER ================= -->
 
 
 <header class="header">
 
-  <div class="container">
 
+<div class="container">
 
-    <a href="index.html"
-       class="logo">
+		   				  
+        <a href="index.html" class="logo">
+            Varun <span>Engineering</span>
+        </a>
 
-      Varun<span>Engineering</span>
+        <nav class="navbar">
 
-    </a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="project-status.html">Projects</a>
+            <a href="contact.html" class="active">Contact</a>
 
+        </nav>
 
-
-    <nav class="navbar"
-         id="navbar">
-
-
-      <a href="index.html">Home</a>
-
-      <a href="about.html">About</a>
-
-      <a href="gallery.html">Gallery</a>
-
-      <a href="project-status.html">
-
-        Project Status
-
-      </a>
-
-      <a class="active">
-
-        Contact
-
-      </a>
-
-
-
-    </nav>
-
-
-
-    <button
-      id="menuBtn"
-      class="menu-btn">
-
-      ☰
-
-    </button>
-
-
-  </div>
+    </div>
 
 </header>
 
-
+<!-- ================= HERO ================= -->
 
 
 
 <section class="contact-hero">
 
+    <div class="overlay"></div>
 
-  <img src="https://picsum.photos/1920/700">
+    <div class="hero-content">
 
+        <h1>Contact Us</h1>
 
-  <div class="overlay">
+        <p>
+            Building Trust Through Engineering Excellence
+        </p>
 
-
-    <h1>
-
-      Contact Us
-
-    </h1>
-
-
-    <p>
-
-      Let's Build Together
-
-
-    </p>
-
-
-
-  </div>
-
-
+    </div>
 
 </section>
 
-
-
-
-
+<!-- ================= CONTACT SECTION ================= -->
 
 <section class="contact-section">
 
+<div class="container contact-grid">
 
-  <div class="container">
+<!-- LEFT SIDE -->
 
+<div class="contact-left">
 
-    <div class="contact-wrapper">
+<h2>Address</h2>
 
+<p>
 
+<strong>Varun Engineering Enterprises</strong>
 
+<br><br>
 
-      <div class="contact-card">
+No.12,
 
+Industrial Estate,
 
-        <h2>
+Red Hills,
 
-          Send Message
+Chennai - 600052
 
-        </h2>
+</p>
 
+<div class="contact-info">
 
+<div>
 
-        <form>
+<i class="fa-solid fa-phone"></i>
 
++91 9042525631
 
-          <input
-            type="text"
-            placeholder="Full Name">
+								 
+</div>
+								 
 
+<div>
 
+<i class="fa-solid fa-envelope"></i>
 
-          <input
-            type="email"
-            placeholder="Email Address">
+info@varunengineering.com
 
+</div>
 
+<div>
 
-          <input
-            type="tel"
-            placeholder="Mobile Number">
+<i class="fa-solid fa-location-dot"></i>
 
+Red Hills, Chennai
 
+</div>
 
-          <textarea
-            placeholder="Message">
+</div>
 
-</textarea>
+<!-- GOOGLE MAP -->
+					   
+					 
+					   
+									   
 
+<div class="map-box">
 
+<iframe
+src="https://www.google.com/maps?q=Red+Hills+Chennai&output=embed"
+allowfullscreen=""
+loading="lazy">
+</iframe>
 
-          <button>
+</div>
+						
+					  
+						
+								
 
-            Submit
+</div>
 
-          </button>
+<!-- RIGHT SIDE -->
 
+<div class="contact-right">
+					  
+					   
+						 
+								   
 
+<div class="contact-card">
 
-        </form>
+<h2>Get In Touch</h2>
 
+<p>
 
+Request a callback from our engineering team.
 
-      </div>
+</p>
 
+<form id="leadForm">
 
+<div class="input-group">
 
+<input
+type="text"
+id="name"
+name="name"
+placeholder="Your Name"
+required>
 
+</div>
 
+<div class="input-group">
 
-      <div class="contact-card">
+<input
+type="email"
+id="email"
+name="email"
+placeholder="Email Address"
+required>
 
+</div>
 
-        <h2>
+<div class="input-group">
 
-          Corporate Office
+<input
+type="tel"
+id="mobile"
+name="mobile"
+placeholder="Mobile Number"
+required>
 
-        </h2>
+</div>
 
 
+<button
+type="submit"
+class="btn-submit">
 
-        <p>
+<i class="fa-solid fa-paper-plane"></i>
 
-          📍 No 536 Pulli Line New Redhills Haroon Ulasa Ciy Vadakarai, Ponneri Chennai, Tamil Nadu
+Submit Enquiry
 
-        </p>
+</button>
 
+<p id="msg"></p>
 
+</form>
 
-        <p>
+</div>
 
-          ☎ +91 9940556359
+</div>
 
-
-        </p>
-
-
-
-        <p>
-
-          ✉ varunEnterprise@gmail.com
-
-
-        </p>
-
-
-
-      </div>
-
-
-
-
-    </div>
-
-
-
-  </div>
-
-
+</div>
 
 </section>
 
+<!-- ================= CAREERS ================= -->
 
 
 
 
 
+<section class="career-section">
 
-<section class="map-section">
+<div class="container">
 
+<h2>
 
-  <iframe
+Current Openings
 
-    src="https://www.google.com/maps?q=chennai&output=embed">
+</h2>
 
-  </iframe>
+<p>
 
+Join our growing engineering team.
+
+</p>
+
+<div class="career-grid">
+
+<div class="career-card">
+
+<h3>
+
+Site Engineer
+
+</h3>
+
+<p>
+
+Experience : 2-5 Years
+
+</p>
+
+<p>
+
+Location : Chennai
+
+</p>
+
+</div>
+
+<div class="career-card">
+
+<h3>
+
+Project Manager
+
+</h3>
+
+<p>
+
+Experience : 5+ Years
+
+</p>
+
+<p>
+
+Location : Bangalore
+
+</p>
+
+</div>
+
+<div class="career-card">
+
+<h3>
+
+QA / QC Engineer
+
+</h3>
+
+<p>
+
+Experience : 3+ Years
+
+</p>
+
+<p>
+
+Location : Hyderabad
+
+</p>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
+<!-- ================= FAQ ================= -->
 
+<section class="faq-section">
 
+<div class="container">
 
+<h2>
 
+Frequently Asked Questions
 
+</h2>
 
-<section class="faq">
+<div class="faq-item">
 
+<button class="faq-btn">
 
-  <div class="container">
+What services do you provide?
 
+</button>
 
-    <h2>
+<div class="faq-content">
 
-      Frequently Asked Questions
+<p>
 
-    </h2>
+Industrial fabrication,
 
+Structural steel,
 
+Mechanical works,
 
+Civil construction,
 
-    <div class="faq-item">
+Pipeline projects,
 
+Turnkey EPC solutions.
 
-      <button>
+</p>
 
-        How can I request a quote?
+</div>
 
+</div>
 
-      </button>
+<div class="faq-item">
 
+<button class="faq-btn">
 
-      <div>
+Do you provide quotations?
 
-        Submit contact form.
+</button>
 
+<div class="faq-content">
 
-      </div>
+<p>
 
+Yes.
+						
 
+We provide free project consultation and quotations.
 
-    </div>
+</p>
 
+</div>
 
+</div>
 
+<div class="faq-item">
 
+<button class="faq-btn">
 
+How quickly can we contact you?
 
-    <div class="faq-item">
+</button>
 
+<div class="faq-content">
 
-      <button>
+<p>
 
-        Do you handle EPC projects?
+Usually within 24 working hours.
 
+</p>
 
-      </button>
+</div>
 
+</div>
 
-
-      <div>
-
-        Yes.
-
-
-      </div>
-
-
-
-    </div>
-
-
-
-  </div>
-
+</div>
 
 </section>
 
+<!-- Floating WhatsApp -->
 
+<a
 
+href="https://wa.me/919042525631"
 
+class="wa-btn"
 
+target="_blank">
 
-
-
-<section class="career">
-
-
-  <div class="container">
-
-
-    <h2>
-
-      Careers
-
-
-    </h2>
-
-
-
-    <p>
-
-      Join our growing team.
-
-
-    </p>
-
-
-
-    <a href="#"
-       class="hero-btn">
-
-      Apply Now
-
-    </a>
-
-
-
-  </div>
-
-
-
-</section>
-
-
-
-
-
-
-
-<footer>
-
-
-  <div class="container">
-
-
-    <p>
-
-      ©2026
-
-      Varun Engineering Enterprises
-
-
-    </p>
-
-
-
-  </div>
-
-
-</footer>
-
-
-
-
-<a href="#"
-   class="wa-btn">
-
-  <i class="fab fa-whatsapp"></i>
+<i class="fa-brands fa-whatsapp"></i>
 
 </a>
 
+<!-- Floating Call -->
 
+<a
 
-<script src="js/contact.js"></script>
+href="tel:+919042525631"
+
+class="call-btn">
+
+<i class="fa-solid fa-phone"></i>
+
+</a>
+
+<!-- Footer -->
+
+<footer class="footer">
+
+		   
+<div class="container">
+
+<p>
+
+© 2026 Varun Engineering Enterprises
+
+</p>
+
+</div>
+
+</footer>
+
+<!-- JS -->
 
 <script src="js/app.js"></script>
+
+<script src="js/contact.js"></script>
 
 </body>
 
